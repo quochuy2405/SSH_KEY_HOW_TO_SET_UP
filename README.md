@@ -17,11 +17,11 @@ Tại shell (.ssh)
 
 thêm profile cho ssh như sau:
 </br>
-Host host_name
-       HostName github.com
-       User git
-       IdentityFile ~/.ssh/id_name
-       IdentitiesOnly yes
+Host host_name</br>
+       HostName github.com</br>
+       User git</br>
+       IdentityFile ~/.ssh/id_name</br>
+       IdentitiesOnly yes</br>
 </br>
 VD link ssh clone là thanhbinh030301/smartphone-store-reactjs.git
 </br>
