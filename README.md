@@ -5,7 +5,7 @@ Làm theo hưỡng dẫn:
 
 ## Ví dụ/Examples
 
-```
+```python
 > cd ~/.ssh 
 
 ```
