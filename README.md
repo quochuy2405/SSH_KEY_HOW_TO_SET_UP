@@ -12,21 +12,21 @@ Làm theo hưỡng dẫn:
 ***Tại shell (.ssh)***
 
 Generate mã key ssh
-```
+```shell
 > ssh-keygen -t rsa 
 ```
 Kiểm tra xem đã có file ssh chưa
-```
+```shell
 > ls
 ```
 VD: id_name.pub và id_name là thành công
 
 Nhập tên VD: **id_name** không cần mật khẩu: **ENTER** cho đến khi xong
-```
+```shell
 > cat id_name.pub
 ```
 Đoạn mã có dạng như sau:
-```
+```shell
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC80XuRN76l+S99
 v1TalDylvC2Ue1nbdxaozpGfvhrmi2VE519uWeHu4tLd7Y5xOcbA
 WQo90w6qw+HC/hLd2zoqNWzkzzfYcE87Xzis/rcuY5kfm/UR2pDO
@@ -35,31 +35,29 @@ Zrj567d6SPYGSiACg1/WOuq0xLF0fnxgk8TpSSN4EFuittwEyF6PL
 MwweCJ0ai16pyeCP2CJEqOGbubD+p5ScUpt9EnIsVN16mzkLu/XcF
 zq/EoLrdNZlPc+pbobwJEn3mIfl8ZTc1SaQP1hQJJYDdGhLvhG95s
 vZ30ATWrmScMopv1RWnHBXoF+PP7V2sk5zvko29CIad1E7ZSpJ9SM
-adjD5JDmRxce+DFnUlYCx1gUpislpboKJcDj8DZZU90swH2G+AaGK
-0B8TrspMFwYtlh3U8J38vCtaVQrRDHqWMBLCAniA5CZf8YQLcd6YF
-krAeXhCzNwBzX21KQ1yNvKfJM= macbookpro@macbooks-macboo
-k-pro.local
+adjD5JDqWMBLCAniA5CZf8YQLcd6YFkrAeXhCzNwBzX21KQ1yNvKfJ
+M= macbookpro@macbooks-macbook-pro.local
 ```
 Copy mã và thêm vào SSH key cho tải khoản github
-```
+```shell
 1. Setting 
 2. SSH and GPG keys 
 3. Thêm ssh vào tài khoản chứa source cần clone
 ```
 Nếu chưa có file **config** tạo file config tại .ssh
-```
+```shell
 > touch config.txt
 ```
 Với MacOS
-```
+```shell
 > open config 
 ```
 Hoặc
-```
+```shell
 > vim config 
-```
+```shell
 Thêm **profile** cho ssh config như sau:
-```
+```shell
 Host host_name
     HostName github.com
     User git
@@ -72,22 +70,21 @@ Host host_name
 **Mới clone**
 
 VD: URL ssh clone là:
-```
+```shell
  thanhbinh030301/smartphone-store-reactjs.git
 ```
 Thì sẽ clone theo cú pháp như sau (nhớ **host_name** là Host của **profile config**)
-```
+```shell
 > git clone git@host_name:thanhbinh030301/smartphone-store-reactjs.git
-
 ```
 
 Thêm tài khoản local config cho project
-```
+```shell
 > git config --local user.name "name"
 > git config --local user.email "account@gmail.com"
 ```
 **Đã clone trước đó rồi**
-```
+```shell
 > git remote rm origin
 > git remote add origin git@host_name:thanhbinh030301/smartphone-store-reactjs.git
 ```
