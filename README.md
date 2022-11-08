@@ -55,7 +55,7 @@ Với MacOS
 Hoặc
 ```shell
 > vim config 
-```shell
+```
 Thêm **profile** cho ssh config như sau:
 ```shell
 Host host_name
