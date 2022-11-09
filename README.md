@@ -15,13 +15,14 @@ Generate mã key ssh
 ```shell
 > ssh-keygen -t rsa 
 ```
+Nhập tên VD: **id_name** không cần mật khẩu: **ENTER** cho đến khi xong
+
 Kiểm tra xem đã có file ssh chưa
 ```shell
 > ls
 ```
 VD: id_name.pub và id_name là thành công
 
-Nhập tên VD: **id_name** không cần mật khẩu: **ENTER** cho đến khi xong
 ```shell
 > cat id_name.pub
 ```
