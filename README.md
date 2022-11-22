@@ -88,8 +88,7 @@ Thêm tài khoản local config cho project
 git config --local user.name "name"
 git config --local user.email "account@gmail.com"
 ```
-**Đã clone trước đó rồi**
-Thì sẽ clone theo cú pháp như sau (nhớ **host_name** là Host của **profile config**)
+**Đã clone trước đó rồi** (nhớ **host_name** là Host của **profile config**)
 ```shell
 > git remote rm origin
 > git remote add origin git@host_name:thanhbinh030301/smartphone-store-reactjs.git
