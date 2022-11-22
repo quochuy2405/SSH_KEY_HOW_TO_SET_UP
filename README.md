@@ -47,15 +47,19 @@ Copy mã và thêm vào SSH key cho tải khoản github
 ```
 Nếu chưa có file **config** tạo file config tại .ssh
 ```shell
-> touch config.txt
+touch config.txt
 ```
-Với MacOS
+Mở với file tạo
 ```shell
-> open config 
+open config.txt 
 ```
-Hoặc
+Mở với file có sẵn
 ```shell
-> vim config 
+open config 
+```
+Hoặc đối với Win
+```shell
+vim config 
 ```
 Thêm **profile** cho ssh config như sau:
 ```shell
@@ -81,10 +85,11 @@ Thì sẽ clone theo cú pháp như sau (nhớ **host_name** là Host của **pr
 
 Thêm tài khoản local config cho project
 ```shell
-> git config --local user.name "name"
-> git config --local user.email "account@gmail.com"
+git config --local user.name "name"
+git config --local user.email "account@gmail.com"
 ```
 **Đã clone trước đó rồi**
+Thì sẽ clone theo cú pháp như sau (nhớ **host_name** là Host của **profile config**)
 ```shell
 > git remote rm origin
 > git remote add origin git@host_name:thanhbinh030301/smartphone-store-reactjs.git
