@@ -76,11 +76,11 @@ Host host_name
 
 VD: URL ssh clone là:
 ```shell
- thanhbinh030301/smartphone-store-reactjs.git
+quochuy2405/App-Discord.git
 ```
 Thì sẽ clone theo cú pháp như sau (nhớ **host_name** là Host của **profile config**)
 ```shell
-> git clone git@host_name:thanhbinh030301/smartphone-store-reactjs.git
+git@host_name:quochuy2405/App-Discord.git
 ```
 
 Thêm tài khoản local config cho project
@@ -91,7 +91,7 @@ git config --local user.email "account@gmail.com"
 **Đã clone trước đó rồi** (nhớ **host_name** là Host của **profile config**)
 ```shell
 > git remote rm origin
-> git remote add origin git@host_name:thanhbinh030301/smartphone-store-reactjs.git
+> git remote add origin git@host_name:quochuy2405/App-Discord.git
 ```
 SSH thử sửa add và push trên repo và lên kiểm tra
 
