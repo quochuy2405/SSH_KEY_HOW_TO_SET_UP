@@ -6,25 +6,25 @@ Làm theo hưỡng dẫn:
 ## Ví dụ/Examples
 
 ```shell
-> cd ~/.ssh 
+cd ~/.ssh 
 
 ```
 ***Tại shell (.ssh)***
 
 Generate mã key ssh
 ```shell
-> ssh-keygen -t rsa 
+ssh-keygen -t rsa 
 ```
 Nhập tên VD: **id_name** không cần mật khẩu: **ENTER** cho đến khi xong
 
 Kiểm tra xem đã có file ssh chưa
 ```shell
-> ls
+ls
 ```
 VD: id_name.pub và id_name là thành công
 
 ```shell
-> cat id_name.pub
+cat id_name.pub
 ```
 Đoạn mã có dạng như sau:
 ```shell
@@ -90,8 +90,8 @@ git config --local user.email "account@gmail.com"
 ```
 **Đã clone trước đó rồi** (nhớ **host_name** là Host của **profile config**)
 ```shell
-> git remote rm origin
-> git remote add origin git@host_name:quochuy2405/App-Discord.git
+git remote rm origin
+git remote add origin git@host_name:quochuy2405/App-Discord.git
 ```
 SSH thử sửa add và push trên repo và lên kiểm tra
 
