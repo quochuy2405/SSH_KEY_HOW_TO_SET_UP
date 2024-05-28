@@ -47,11 +47,11 @@ Copy mã và thêm vào SSH key cho tải khoản github
 ```
 Nếu chưa có file **config** tạo file config tại .ssh
 ```shell
-touch config.txt
+touch config
 ```
 Mở với file tạo
 ```shell
-open config.txt 
+open config
 ```
 Mở với file có sẵn
 ```shell
