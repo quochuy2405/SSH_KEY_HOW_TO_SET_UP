@@ -63,11 +63,20 @@ vim config
 ```
 Thêm **profile** cho ssh config như sau:
 ```shell
+For github
 Host host_name
     HostName github.com
     User git
     IdentityFile ~/.ssh/id_name
     IdentitiesOnly yes
+```
+---------
+```shell
+For gitlab
+Host gitlab.com
+   HostName gitlab.com
+   PreferredAuthentications publickey
+   IdentityFile ~/.ssh/id_name
 ```
 
 **TẠI ĐƯỜNG DẪN CỦA PROJECT**
