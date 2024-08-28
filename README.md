@@ -62,8 +62,8 @@ Hoặc đối với Win
 vim config 
 ```
 Thêm **profile** cho ssh config như sau:
-```shell
 For github
+```shell
 Host host_name
     HostName github.com
     User git
@@ -71,8 +71,8 @@ Host host_name
     IdentitiesOnly yes
 ```
 ---------
-```shell
 For gitlab
+```shell
 Host gitlab.com
    HostName gitlab.com
    PreferredAuthentications publickey
